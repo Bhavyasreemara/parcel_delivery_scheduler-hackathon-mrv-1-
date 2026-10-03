@@ -1,0 +1,164 @@
+<div class="container">
+
+    <h1>📦 Parcel Delivery Priority Scheduler</h1>
+
+    <p class="subtitle">
+        Schedule deliveries based on urgency, distance and deadline.
+    </p>
+
+    <form action="/schedule" method="POST">
+
+        <div class="parcel-card">
+
+            <h2>Parcel 1</h2>
+
+            <label>Parcel ID</label>
+
+            <input
+                type="text"
+                name="parcel_id"
+                value="P001"
+                required
+            >
+
+            <label>Urgency</label>
+
+            <input
+                type="number"
+                name="urgency"
+                min="1"
+                max="10"
+                placeholder="1 - 10"
+                required
+            >
+
+            <label>Distance (km)</label>
+
+            <input
+                type="number"
+                name="distance"
+                min="1"
+                step="0.1"
+                placeholder="Distance in km"
+                required
+            >
+
+            <label>Delivery Deadline</label>
+
+            <input
+                type="number"
+                name="deadline"
+                min="1"
+                placeholder="Deadline"
+                required
+            >
+
+        </div>
+
+
+        <div class="parcel-card">
+
+            <h2>Parcel 2</h2>
+
+            <label>Parcel ID</label>
+
+            <input
+                type="text"
+                name="parcel_id"
+                value="P002"
+                required
+            >
+
+            <label>Urgency</label>
+
+            <input
+                type="number"
+                name="urgency"
+                min="1"
+                max="10"
+                placeholder="1 - 10"
+                required
+            >
+
+            <label>Distance (km)</label>
+
+            <input
+                type="number"
+                name="distance"
+                min="1"
+                step="0.1"
+                placeholder="Distance in km"
+                required
+            >
+
+            <label>Delivery Deadline</label>
+
+            <input
+                type="number"
+                name="deadline"
+                min="1"
+                placeholder="Deadline"
+                required
+            >
+
+        </div>
+
+
+        <div class="parcel-card">
+
+            <h2>Parcel 3</h2>
+
+            <label>Parcel ID</label>
+
+            <input
+                type="text"
+                name="parcel_id"
+                value="P003"
+                required
+            >
+
+            <label>Urgency</label>
+
+            <input
+                type="number"
+                name="urgency"
+                min="1"
+                max="10"
+                placeholder="1 - 10"
+                required
+            >
+
+            <label>Distance (km)</label>
+
+            <input
+                type="number"
+                name="distance"
+                min="1"
+                step="0.1"
+                placeholder="Distance in km"
+                required
+            >
+
+            <label>Delivery Deadline</label>
+
+            <input
+                type="number"
+                name="deadline"
+                min="1"
+                placeholder="Deadline"
+                required
+            >
+
+        </div>
+
+
+        <button type="submit">
+            🚚 Generate Delivery Schedule
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

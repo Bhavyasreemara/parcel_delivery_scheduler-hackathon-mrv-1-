@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0f172a,
+            #1e293b,
+            #312e81
+        );
+
+    color: white;
+
+    min-height: 100vh;
+
+    padding: 40px 20px;
+}
+
+
+.container {
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+
+h1 {
+    text-align: center;
+
+    font-size: 36px;
+
+    margin-bottom: 10px;
+}
+
+
+.subtitle {
+    text-align: center;
+
+    color: #cbd5e1;
+
+    margin-bottom: 35px;
+}
+
+
+.parcel-card {
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+
+    backdrop-filter: blur(10px);
+}
+
+
+.parcel-card h2 {
+    margin-bottom: 20px;
+
+    color: #93c5fd;
+}
+
+
+label {
+    display: block;
+
+    margin-top: 12px;
+
+    margin-bottom: 6px;
+
+    font-weight: bold;
+}
+
+
+input {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #f8fafc;
+
+    color: #111827;
+
+    font-size: 15px;
+}
+
+
+button {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+}
+
+
+button:hover {
+    background: #1d4ed8;
+}
+
+
+.table-container {
+    overflow-x: auto;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border-radius: 15px;
+
+    padding: 20px;
+}
+
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+
+th,
+td {
+    padding: 15px;
+
+    text-align: center;
+
+    border-bottom: 1px solid
+        rgba(255, 255, 255, 0.15);
+}
+
+
+th {
+    background: rgba(37, 99, 235, 0.5);
+}
+
+
+.priority {
+    font-weight: bold;
+
+    color: #93c5fd;
+}
+
+
+.explanation {
+    margin-top: 30px;
+
+    padding: 25px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border-radius: 15px;
+}
+
+
+.explanation h2 {
+    margin-bottom: 15px;
+
+    color: #93c5fd;
+}
+
+
+.explanation p {
+    margin-bottom: 10px;
+
+    color: #cbd5e1;
+
+    line-height: 1.6;
+}
+
+
+.back-button {
+    display: block;
+
+    text-align: center;
+
+    margin-top: 25px;
+
+    padding: 13px;
+
+    background: #475569;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+}
+
+
+.back-button:hover {
+    background: #64748b;
+}
+
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 27px;
+    }
+
+    body {
+        padding: 20px 10px;
+    }
+
+    .parcel-card {
+        padding: 18px;
+    }
+
+}

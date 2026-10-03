@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Delivery Schedule</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🚚 Delivery Schedule</h1>
+
+    <p class="subtitle">
+        Parcels are arranged according to calculated priority.
+    </p>
+
+
+    <div class="table-container">
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Delivery Order</th>
+                    <th>Parcel ID</th>
+                    <th>Urgency</th>
+                    <th>Distance</th>
+                    <th>Deadline</th>
+                    <th>Priority Score</th>
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                {% for parcel in parcels %}
+
+                <tr>
+
+                    <td>
+                        {{ loop.index }}
+                    </td>
+
+                    <td>
+                        {{ parcel.id }}
+                    </td>
+
+                    <td>
+                        {{ parcel.urgency }}
+                    </td>
+
+                    <td>
+                        {{ parcel.distance }} km
+                    </td>
+
+                    <td>
+                        {{ parcel.deadline }}
+                    </td>
+
+                    <td class="priority">
+                        {{ parcel.priority }}
+                    </td>
+
+                </tr>
+
+                {% endfor %}
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="explanation">
+
+        <h2>How the scheduling works</h2>
+
+        <p>
+            Each parcel receives a priority score based on
+            urgency, distance and delivery deadline.
+        </p>
+
+        <p>
+            Parcels with higher priority scores are placed
+            earlier in the delivery schedule.
+        </p>
+
+        <p>
+            A priority queue is used to efficiently select
+            the next parcel for delivery.
+        </p>
+
+    </div>
+
+
+    <a href="/" class="back-button">
+        ← Schedule Again
+    </a>
+
+</div>
+
+</body>
+
+</html>
